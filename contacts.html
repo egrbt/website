@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты | Егор Батанов – частный IT-специалист</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Шапка -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">Егор Батанов</a>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="uslugi.html">Услуги</a></li>
+                    <li><a href="articles.html">Статьи</a></li>
+                    <li><a href="portfolio.html">Мои достижения</a></li>
+                    <li><a href="contacts.html" class="active">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Заголовок страницы -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Связаться со мной</h1>
+            <p class="subtitle">Звоните, пишите в мессенджеры или оставьте заявку — отвечу как можно скорее</p>
+        </div>
+    </section>
+
+    <!-- Основной блок контактов -->
+    <section class="contacts-section">
+        <div class="container">
+            <div class="contacts-grid">
+
+                <!-- Левая колонка: способы связи -->
+                <div class="contact-methods">
+
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div>
+                            <h3>Телефон</h3>
+                            <a href="tel:+79522133738" class="contact-link">+7 (952) 213-37-38</a>
+                            <p class="small">Звоните или пишите в WhatsApp / Telegram</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">📱</div>
+                        <div>
+                            <h3>Telegram</h3>
+                            <a href="https://t.me/egrbt" target="_blank" class="contact-link">@egrbt</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">✉️</div>
+                        <div>
+                            <h3>E-mail</h3>
+                            <a href="mailto:batanov_08zaza@mail.ru" class="contact-link">batanov_08zaza@mail.ru</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">⏰</div>
+                        <div>
+                            <h3>Режим работы</h3>
+                            <p>Ежедневно с 9:00 до 19:00<br>Выезд по Приозерску и району — круглосуточно (по договорённости)</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">🚗</div>
+                        <div>
+                            <h3>Зона выезда</h3>
+                            <p>Приозерск и район<br>Выезд бесплатный в пределах города</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Правая колонка: форма обратной связи -->
+                <div class="contact-form-card">
+                    <h2>Оставить заявку</h2>
+                    <p class="form-desc">Опишите проблему — я позвоню вам в течении дня (также в заявке можете указать удобное вам время)</p>
+
+                    <form action="https://formspree.io/f/xnnebade" method="POST">
+                        <input type="text" name="name" placeholder="Ваше имя" required>
+                        <input type="tel" name="phone" placeholder="Телефон (обязательно)" required>
+                        <textarea name="message" rows="4" placeholder="Кратко опишите проблему (например: «ноутбук не включается после залития чаем»)"></textarea>
+                        <button type="submit" class="btn btn-primary large">Отправить заявку</button>
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 Егор Батанов. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Мобильное меню
+        document.querySelector('.mobile-menu-toggle').addEventListener('click', () => {
+            document.querySelector('.nav').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

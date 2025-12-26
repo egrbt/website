@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Достижения | Егор Батанов – IT-специалист</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Шапка -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">Егор Батанов</a>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="uslugi.html">Услуги</a></li>
+                    <li><a href="articles.html">Статьи</a></li>
+                    <li><a href="portfolio.html" class="active">Мои достижения</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-hero">
+        <div class="container">
+            <h1>Мои достижения</h1>
+            <p class="subtitle">Дипломы и сертификаты</p>
+        </div>
+    </section>
+
+    <section class="portfolio-section">
+        <div class="container">
+            <div class="portfolio-grid">
+
+                <!-- Примеры — просто добавляй свои сканы в папку cert/ -->
+                <div class="certificate-card">
+                    <a href="Assets/diplom1.jpg" data-lightbox="certs" data-title="Диплом МГТУ им. Баумана">
+                        <img src="Assets/diplom1.jpg" alt="Диплом МГТУ им. Баумана" loading="lazy">
+                    </a>
+                    <div class="cert-caption">
+                        <h3>Диплом за 1 место</h3>
+                        <p>Ленинградская область 2025</p>
+                    </div>
+                </div>
+
+                <div class="certificate-card">
+                    <a href="Assets/diplom2.jpg" data-lightbox="certs" data-title="Microsoft Azure Administrator">
+                        <img src="Assets/diplom2.jpg" alt="Microsoft Azure" loading="lazy">
+                    </a>
+                    <div class="cert-caption">
+                        <h3>Диплом за профессионализм</h3>
+                        <p>Новосибирск 2025</p>
+                    </div>
+                </div>
+
+                <div class="certificate-card">
+                    <a href="Assets/diplom3.jpg" data-lightbox="certs" data-title="Cisco CCNA">
+                        <img src="Assets/diplom3.jpg" alt="Cisco CCNA" loading="lazy">
+                    </a>
+                    <div class="cert-caption">
+                        <h3>Кибербезопасность 2 место</h3>
+                        <p>Международный IT форум "Свой код" Смоленск 2025</p>
+                    </div>
+                </div>
+
+                    <div class="certificate-card">
+                    <a href="Assets/diplom4.png" data-lightbox="certs" data-title="Cisco CCNA">
+                        <img src="Assets/diplom4.png" alt="Cisco CCNA" loading="lazy">
+                    </a>
+                    <div class="cert-caption">
+                        <h3>Linux</h3>
+                        <p>Официальный сертификат с госуслуг</p>
+                    </div>
+                </div>
+
+                <!-- Добавляй сколько угодно -->
+                <!-- <div class="certificate-card">…</div> -->
+
+            </div>
+
+            <div class="portfolio-note">
+                <p>Все оригиналы можно посмотреть при встрече • По запросу высылаю сканы в максимальном разрешении</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 Егор Батанов. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <!-- Lightbox2 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+
+    <script>
+        document.querySelector('.mobile-menu-toggle').addEventListener('click', () => {
+            document.querySelector('.nav').classList.toggle('active');
+        });
+
+        lightbox.option({
+            resizeDuration: 300,
+            wrapAround: true,
+            albumLabel: "Изображение %1 из %2"
+        });
+    </script>
+</body>
+</html>

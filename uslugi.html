@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Услуги | Егор Батанов | IT-специалист</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Шапка (та же самая) -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">Егор Батанов</a>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="uslugi.html" class="active">Услуги</a></li>
+                    <li><a href="articles.html">Статьи</a></li>
+                    <li><a href="portfolio.html">Мои достижения</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Заголовок страницы -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Мои услуги</h1>
+            <p class="subtitle">Честные цены • Выезд бесплатно • Гарантия на все работы</p>
+        </div>
+    </section>
+
+    <!-- Список услуг -->
+    <section class="services-section">
+        <div class="container">
+            <div class="services-grid">
+
+                <div class="service-card">
+                    <div class="service-icon">🖥️</div>
+                    <h3>Ремонт компьютеров и ноутбуков</h3>
+                    <p>Замена экрана, клавиатуры, обслуживание, ремонт после залития</p>
+                    <div class="price">от 900 ₽</div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🛠️</div>
+                    <h3>Переустановка Windows / Linux</h3>
+                    <p>Чистая установка системы, перенос данных, установка драйверов и нужных программ</p>
+                    <div class="price">от 900 ₽</div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🦠</div>
+                    <h3>Удаление вирусов и баннеров</h3>
+                    <p>Полная очистка от вирусов, троянов, рекламного ПО, восстановление корректной работы системы</p>
+                    <div class="price">от 800 ₽</div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🛜</div>
+                    <h3>Настройка Wi-Fi и роутеров</h3>
+                    <p>Усиление сигнала, настройка mesh-систем, скрытие сети, родительский контроль</p>
+                    <div class="price">от 1000 ₽</div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🖧</div>
+                    <h3>Настройка MikroTik</h3>
+                    <p>Hot spot, базовая настройка, безопасность, изоляция, восстановление, удалённый доступ, проброс портов</p>
+                    <div class="price">от 2000 ₽</div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🖱️</div>
+                    <h3>Настройка и сборка ПК</h3>
+                    <p>Сборка игрового/рабочего ПК под бюджет, апгрейд, подбор комплектующих</p>
+                    <div class="price">от 1500 ₽</div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🔧</div>
+                    <h3>Удалённая помощь</h3>
+                    <p>Решение 90 % проблем через AnyDesk/TeamViewer за 15–40 минут</p>
+                    <div class="price">от 500 ₽</div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">⭐</div>
+                    <h3>Абонентское обслуживание</h3>
+                    <p>Для малого бизнеса и частных лиц — фиксированная плата в месяц</p>
+                    <div class="price">от 5000 ₽/мес</div>
+                </div>
+
+                    <div class="service-card">
+                    <div class="service-icon">🛡️</div>
+                    <h3>Настройка авторизации Wi-Fi</h3>
+                    <p>Учитывая требования № 126-ФЗ Указа Правительства РФ № 758</p>
+                    <div class="price">от 2400 ₽</div>
+                </div>
+
+            </div>
+
+            <!-- Блок с призывом -->
+            <div class="call-to-action">
+                <h2>Не нашли нужную услугу?</h2>
+                <p>Позвоните или напишите — все IT-проблемы можно решить!</p>
+                <a href="contacts.html" class="btn btn-primary large">Связаться сейчас</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 Егор Батанов. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script>
+        // То же мобильное меню, что и на главной
+        document.querySelector('.mobile-menu-toggle').addEventListener('click', function() {
+            document.querySelector('.nav').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Статьи и советы | Егор Батанов – IT-специалист</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="logo"><a href="index.html">Егор Батанов</a></div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="uslugi.html">Услуги</a></li>
+                    <li><a href="articles.html" class="active">Статьи</a></li>
+                    <li><a href="portfolio.html">Мои достижения</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-toggle"><span></span><span></span><span></span></div>
+        </div>
+    </header>
+
+    <section class="page-hero">
+        <div class="container">
+            <h1>Полезные статьи</h1>
+            <p class="subtitle">Простые советы по ремонту, настройке и защите компьютера</p>
+        </div>
+    </section>
+
+    <section class="articles-section">
+        <div class="container">
+
+            <div class="articles-grid">
+
+                <!-- КАРТОЧКА СТАТЬИ-->
+                <article class="article-card">
+                    <a href="articles/Auth-wifi.html">
+                        <div class="article-thumb">
+                            <img src="img/articles/wifi-auth.jpeg" alt="Закон об авторизации Wi-Fi 2025">
+                </div>
+                <div class="article-card-body">
+                    <h3>Обязательна ли авторизация в общественном Wi-Fi по закону в 2025?</h3>
+                    <p class="article-preview">Полный разбор законодательства, актуальные штрафы до 300 000 ₽ и как быстро сделать всё легально и недорого...</p>
+                    <div class="article-meta">
+                        <span>8 декабря 2025</span>
+                        <span>5 мин</span>
+                </div>
+            </div>
+        </a>
+    </article>
+                <!-- Вторая статья -->
+                <article class="article-card">
+                    <a href="articles/AboutMe.html">
+                        <div class="article-thumb">
+                            <img src="img/articles/me.jpg" alt="Егор Батанов">
+                        </div>
+                        <div class="article-card-body">
+                            <h3>Кто я?</h3>
+                            <p class="article-preview">Немного обо мне</p>
+                            <div class="article-meta">
+                                <span>26 декабря 2025</span>
+                                <span>2 мин</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 Егор Батанов. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.mobile-menu-toggle').addEventListener('click', () => {
+            document.querySelector('.nav').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

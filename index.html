@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Егор Батанов | IT-специалист</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Навигационная панель -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">Егор Батанов</a>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html" class="active">Главная</a></li>
+                    <li><a href="uslugi.html">Услуги</a></li>
+                    <li><a href="articles.html">Статьи</a></li>
+                    <li><a href="portfolio.html">Мои достижения</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+            <!-- Мобильное меню (гамбургер) -->
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Главный экран -->
+    <section class="hero">
+        <div class="container">
+            <h1>Приветствую, моё имя Егор Батанов</h1>
+            <p class="subtitle">Частный IT-специалист с 3х-летним опытом</p>
+            <p class="description">
+                Ремонт компьютеров и ноутбуков • Настройка Wi-Fi и сетей • Удаление вирусов • Установка ОС и ПО <br>
+                Выезд по городу — бесплатно!
+            </p>
+            <div class="hero-buttons">
+                <a href="contacts.html" class="btn btn-primary">Связаться со мной</a>
+                <a href="uslugi.html" class="btn btn-secondary">Посмотреть услуги</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Преимущества -->
+    <section class="features">
+        <div class="container">
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="icon">⚡</div>
+                    <h3>Быстро</h3>
+                    <p>Приезжаю в течение 2 часов или решаю проблему удалённо за 15–30 минут</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">💰</div>
+                    <h3>Честные цены</h3>
+                    <p>Работаю как самозанятый. Называю окончательную стоимость до начала работ, выдаю чек</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">🛡️</div>
+                    <h3>Гарантия</h3>
+                    <p>Даю гарантию на все выполненные работы от 30 дней</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 Егор Батанов. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Простое мобильное меню
+        document.querySelector('.mobile-menu-toggle').addEventListener('click', function() {
+            document.querySelector('.nav').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
